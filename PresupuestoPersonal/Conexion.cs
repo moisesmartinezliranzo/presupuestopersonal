@@ -11,7 +11,8 @@ namespace PresupuestoPersonal
 {
     class Conexion
     {
-        public static SqlConnection getConexion() {
+        public static SqlConnection getConexion() 
+        {
             SqlConnection conn = null;
 
             try
@@ -20,7 +21,8 @@ namespace PresupuestoPersonal
                 conn.Open();
                 return conn;
             }
-            catch(Exception ex){                
+            catch(Exception ex)
+            {                
                 MessageBox.Show(ex.ToString());
                 return null;
             }
